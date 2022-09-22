@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title><!--las href van a dar la referncia al bootstarp-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="style.css"> 
+   </head>
   <body>
     <!--3 columnas idénticas usando col-->
   <div class="container border border-success border-1 text-center my-5">
@@ -43,16 +44,39 @@
    <!--2 columnas identicas y una desigual con 2 breakpoints(romper la colinas en filas)-->
   <div class="container text-center my-5"><!-- .contiener>.row.col*3-->
     <div class="row">
-    <div class="col-md-2 col-sm-4 border border-primary">md-2 sm-4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nobis cumque magnam saepe sint assumenda, perferendis eaque distinctio ab architecto ullam neque, perspiciatis quaerat optio earum odio expedita debitis quis!</div>
-    <div class="col-md-8 col-sm-8 border border-secondary">md-8 sm-8 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eius quisquam quasi aut amet excepturi dolore sunt eaque fugiat id illo, praesentium impedit, natus quam veniam odit, est at voluptatem.
-    Autem tenetur optio possimus facilis eligendi, libero totam alias consequuntur vero, sequi delectus voluptatibus hic iusto adipisci soluta animi nisi perferendis rerum! Blanditiis quia saepe illo recusandae, voluptatibus commodi at.
-    Id vel est enim inventore laborum itaque. In tenetur impedit aperiam magni vitae ut beatae voluptas sint repellendus, doloribus omnis quae minus molestiae quis libero illum, consequuntur molestias, maiores blanditiis.</div>
-    <div class="col-md-2 col-sm-12 border border-danger">md-2 sm-12 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nulla ipsum cum reiciendis repudiandae illum aliquam error magni exercitationem, quaerat officiis expedita facilis? Eveniet culpa maiores ullam incidunt reprehenderit deleniti.
-    Doloremque qui id, nisi, iure reprehenderit incidunt cupiditate, perferendis molestias impedit similique iusto aliquam natus vero odio fugit dicta neque enim ea explicabo cumque quas adipisci! Quo maxime fugiat assumenda?
-    Libero provident qui possimus repellendus nam corrupti obcaecati hic autem voluptatibus pariatur! Dolores nulla, obcaecati blanditiis veritatis aspernatur, laudantium, nihil sint illum doloremque neque velit similique maxime alias perferendis enim?</div><!--no poner 5-->
-     </div>
+    <div class="col-md-2 col-sm-4 border border-primary">md-2 sm-4</div>
+    <div class="col-md-8 col-sm-8 border border-secondary">md-8 sm-8</div>
+    <div class="col-md-2 col-sm-12 border border-danger">md-2 sm-12</div>
+   </div> <!-- al final tenemos el lumite de 12 columnas con md (2-8-2) con sm(4-8 y 12) -->
+
+   <!--2 columnas identicas y una desigual con 2 breakpoints(romper la colinas en filas) y fila con min de altura-->
+  <div class="container text-center my-5"><!-- .contiener>.row.col*3-->
+    <div class="row altura-min">
+    <div class="col-md-2 col-sm-4  border  border-primary align-self-start ">md-2 sm-4</div>
+    <div class="col-md-8 col-sm-8  border  border-secondary align-self-center ">md-8 sm-8</div>
+    <div class="col-md-2 col-sm-12 border border-danger align-self-end ">md-2 sm-12</div>
    </div>
-   <!-- al final tenemos el lumite de 12 columnas con md (2-8-2) con sm(4-8 y 12) -->
+
+   <!--2 columnas diferentes a la derecha-->
+   <div class="container text-center my-5"><!-- .contiener>.row.col*3-->
+    <div class="row justify-content-end">
+    <div class="col-md-2  border  border-primary">md-2</div>
+    <div class="col-md-6  border  border-secondary">md-8</div>
+   </div>
+
+   <!--grid complejo-->
+   <div class="container-fluid text-center my-5"><!-- .contiener>.row.col*3-->
+    <div class="row">
+     <div class="col-md-6  border  border-primary">
+      <div class="row">
+        <div class="col-md-12 border border-secondary">col</div>
+        <div class="col-md-12 border border-secondary">col</div>
+      </div>
+    </div>
+    <div class="col-md-3  border  border-secondary">md-6</div>
+    <div class="col-md-3  border  border-secondary">md-6</div>
+   </div>
+   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
